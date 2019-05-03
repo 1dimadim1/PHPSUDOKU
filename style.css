@@ -1,0 +1,89 @@
+html, body {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color:cornsilk;
+    color: black;
+    font-family: Myriad Pro, Arial;
+    margin: 0px;
+}
+footer{
+    color:white;
+    background-color: brown;
+    height: 30px;
+    padding: 5px;
+}
+.menu_header {
+    float:right;
+    margin-top:40px;
+}
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    color:white;
+    font-size:60px;
+    padding: 30px;
+}
+.container1 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.container2 {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    flex-grow: 1;
+}
+.table2{
+    position:absolute;
+    left:75%;
+    visibility: hidden;
+}
+.table1{
+    margin-top: 20px;
+    border:none;
+}
+td{
+    padding: 15px;
+    border:1px solid;
+    margin: 0px;
+}
+th{
+    padding: 15px;
+    border:1px solid;
+    margin: 0px;
+}
+tr td:nth-child(3n+3){
+    border-right-width: 3px;
+}
+tr td:nth-child(3n-2){
+    border-left-width: 3px;
+}
+.table1 tr:nth-child(3n+3) td{
+    border-bottom-width:3px;
+}
+.table1 tr:nth-child(3n-2) td{
+    border-top-width:3px;
+}
+button{
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
