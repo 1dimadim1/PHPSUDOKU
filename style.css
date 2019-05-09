@@ -5,7 +5,7 @@ html, body {
 body{
     display: flex;
     flex-direction: column;
-    background-color:cornsilk;
+    background-color:#fff8dc;
     color: black;
     font-family: Myriad Pro, Arial;
     margin: 0px;
@@ -40,6 +40,12 @@ header {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    text-align: center;
+}
+b{
+  text-align:center;
+  line-height:200%;
+    font-size: 25px;
 }
 .container2 {
     display:flex;

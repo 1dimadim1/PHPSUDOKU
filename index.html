@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Sudoku</title>
     <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
     <script src="./index.js"></script>
 </head>
 <body>
@@ -12,20 +13,20 @@
        Судоку
    </header>
     <div class="container1">
-        Выберите поле
-        
-    <table border="1" class="table1">
-   <caption></caption>
-   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-  </table>
+        <b>Выберите поле (Введя в соответствуещее поле снизу выбранную цифру)<br> В данной игре представленно 12 судоку, уровень сложности, которых идет от большего к меньшему</b>
+
+        <!--    <table border="1" class="table1">-->
+        <!--   <caption></caption>-->
+        <!--   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>-->
+        <!--   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>-->
+        <!--   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>-->
+        <!--   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>-->
+        <!--   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>-->
+        <!--   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>-->
+        <!--   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>-->
+        <!--   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>-->
+        <!--   <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>-->
+        <!--  </table>-->
         <table border="1" class="table2">
    <tr>
     <th>0</th>
@@ -61,13 +62,10 @@
      </div>
     <div class="container2">
         <form action="./update.php" method=POST>
-            <input type="number" name="level" value="1" required>
+            <input type="number" name="level" required>
             <button type="submit">Обновить</button>
         </form>
-        <form action="Check.php" method=POST>
     <button type=submit>Проверить</button>
-        </form>
-        
     </div>
     <footer>Made by Dmitry Lis</footer>
 </body>
